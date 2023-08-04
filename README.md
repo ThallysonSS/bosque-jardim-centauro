@@ -4,7 +4,7 @@ O objetivo deste projeto foi colocar em prática meus conhecimentos em html e cs
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
-| :sparkles: Daiana        | **Bosque Jardim Centauro**
+| :sparkles: Thallyson        | **Bosque Jardim Centauro**
 | :label: Tecnologias | html, css
 | :rocket: URL do projeto        | https://thallysonss.github.io/bosque-jardim-centauro/
 
