@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fale Conosco</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./src/fale.Conosco.css" />
+</head>
+
+<body>
+  <button class="btn-voltar-inicio" id="btn-topo"><a href="./index.html">Voltar para o início</a></button>
+  <h1>Fale Conosco</h1>
+  <form action="https://formsubmit.co/escola.alfredo.parodi@gmail.com" method="POST" class="form">
+    <label for="name">Nome</label>
+    <input type="text" name="name" id="name" required />
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email" required />
+    <label for="message">Mensagem</label>
+    <textarea name="message" id="message" required></textarea>
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html" />
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+
+</html>
