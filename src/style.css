@@ -1,0 +1,289 @@
+/* 1rem = 16px */
+
+:root {
+  font-size: 16px;
+  --royal-blue-light: #404eed;
+  --royal-blue-dark: #3946d4;
+  --white: #fff;
+  --black: #000000;
+  --background: #e2e3e9;
+  --fonte-principal: "Quattrocento Sans";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quattrocento Sans";
+  background: linear-gradient(to right, #A1FFCE, #FAFFD1);
+ }
+
+/* MENU HAMBURGER */
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #000046, #1CB5E0);
+  height: 4.6875rem;
+  padding: 1rem;
+  
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.menu a {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.menu a:hover {
+  background: var(--royal-blue-dark);
+}
+
+.label-menu,
+.checkbox {
+  display: none;
+}
+
+.titulo {
+  color: #000046;
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+}
+
+.titulo-geral {
+  font-size: 2.5rem;
+  color: #000046;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.titulo-secundario {
+  font-size: 1.5rem;
+  color: #ff0000;
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.texto {
+  flex-basis: 50%;
+}
+
+.paragrafo-geral {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.paragrafo-tela-inicial {
+  font-size: 1.3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.paragrafo-principal {
+  font-size: 1.3rem;
+  color: #ff0000;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*cards*/
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex-basis: calc(50% - 10px);
+  background-color: var(--royal-blue-light);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+h3 {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.card-texto{
+  color: var(--white);
+}
+
+/* Estilo do botão de abaixo-assinado */
+.btn-assinar {
+  display: block;
+  margin: 0 auto;
+  background-color: #ff0000;
+  color: var(--white);
+  font-family: var(--fonte-principal);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-assinar:hover {
+  background-color: #ff0000;
+  transform: scale(1.05);
+}
+
+/* Estilo para a seção do mapa */
+
+.mapa-container {
+  width: 100%;
+  padding: 2px 0;
+  background-color: var(--royal-blue-light);
+}
+
+/*estilo das imagens*/
+
+.img-lixo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.img-lixo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.imagem {
+  flex-basis: 50%;
+  margin-top: 5rem;
+}
+
+.imagem img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.conteiner-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.foto-do-bosque {
+  width: 300px;
+  max-width: 100%;
+  height: 300px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px;
+}
+
+/* Estilo do rodapé */
+.rodape {
+  background: linear-gradient(to right, #000046, #1CB5E0);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+}
+
+
+/* Versão Mobile */
+
+@media (max-width: 767px) {
+  .menu {
+    display: block;
+    position: absolute;
+    top: 4.6875rem;
+    left: 0;
+    background: linear-gradient(to right, #000046, #1CB5E0);
+    text-align: center;
+    width: 100%;
+    height: 0;
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .menu a {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+  }
+
+  .label-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+    padding-block: 1rem;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+  }
+
+  .checkbox:checked~.menu {
+    height: calc(39vh - 4.6875rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+   
+}
