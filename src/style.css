@@ -230,8 +230,9 @@ h3 {
   position: fixed;
 }
 .qrcode{
-  max-width: 100%;
-  height: auto;
+ display:flex;
+ justify-content: right;
+ margin-top: 10px;
 }
 
 
