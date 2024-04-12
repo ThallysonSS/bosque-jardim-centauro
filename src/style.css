@@ -229,6 +229,10 @@ h3 {
   width: 100%;
   position: fixed;
 }
+.qrcode{
+  max-width: 100%;
+  height: auto;
+}
 
 
 /* Versão Mobile */
